@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ButtonSoundActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/contributors"
+        app:layout_constraintBottom_toTopOf="@+id/navigation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btAvoo"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Avó"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btOla" />
+
+    <Button
+        android:id="@+id/btAvou"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Avô"
+        app:layout_constraintStart_toEndOf="@+id/btAvoo"
+        app:layout_constraintTop_toBottomOf="@+id/btAdeus" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/navigation" />
+
+    <Button
+        android:id="@+id/btAgua"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="Água"
+        app:layout_constraintStart_toEndOf="@+id/btAdeus"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAdeus"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Adeus"
+        app:layout_constraintStart_toEndOf="@+id/btOla"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btOla"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="36dp"
+        android:text="Olá"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btAna"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:text="Ana"
+        app:layout_constraintStart_toEndOf="@+id/btAgua"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btCasa"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Casa"
+        app:layout_constraintStart_toEndOf="@+id/btCaixa"
+        app:layout_constraintTop_toBottomOf="@+id/btAna" />
+
+    <Button
+        android:id="@+id/btGarrafa"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Garrafa"
+        android:textScaleX="0.9"
+        app:layout_constraintStart_toEndOf="@+id/btJoao"
+        app:layout_constraintTop_toBottomOf="@+id/btCasa" />
+
+    <Button
+        android:id="@+id/btGato"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Gato"
+        app:layout_constraintStart_toEndOf="@+id/btCopo"
+        app:layout_constraintTop_toBottomOf="@+id/btAvou" />
+
+    <Button
+        android:id="@+id/btJoao"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="João"
+        app:layout_constraintStart_toEndOf="@+id/btGato"
+        app:layout_constraintTop_toBottomOf="@+id/btCaixa" />
+
+    <Button
+        android:id="@+id/btMae"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Mãe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btCopo" />
+
+    <Button
+        android:id="@+id/btMala"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mala"
+        app:layout_constraintStart_toEndOf="@+id/btMae"
+        app:layout_constraintTop_toBottomOf="@+id/btGato" />
+
+    <Button
+        android:id="@+id/btMaria"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Maria"
+        app:layout_constraintStart_toEndOf="@+id/btMala"
+        app:layout_constraintTop_toBottomOf="@+id/btJoao" />
+
+    <Button
+        android:id="@+id/btPapa"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Papa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMae" />
+
+    <Button
+        android:id="@+id/btRato"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Rato"
+        app:layout_constraintStart_toEndOf="@+id/btPapa"
+        app:layout_constraintTop_toBottomOf="@+id/btMala" />
+
+    <Button
+        android:id="@+id/btTia"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Tia"
+        app:layout_constraintStart_toEndOf="@+id/btRato"
+        app:layout_constraintTop_toBottomOf="@+id/btMaria" />
+
+    <Button
+        android:id="@+id/btTio"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:text="Tio"
+        app:layout_constraintStart_toEndOf="@+id/btTia"
+        app:layout_constraintTop_toBottomOf="@+id/btMesa" />
+
+    <Button
+        android:id="@+id/btMesa"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Mesa"
+        app:layout_constraintStart_toEndOf="@+id/btMaria"
+        app:layout_constraintTop_toBottomOf="@+id/btGarrafa" />
+
+    <Button
+        android:id="@+id/btCopo"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:text="Copo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btAvoo" />
+
+    <Button
+        android:id="@+id/btCaixa"
+        android:layout_width="80dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:text="Caixa"
+        app:layout_constraintStart_toEndOf="@+id/btAvou"
+        app:layout_constraintTop_toBottomOf="@+id/btAgua" />
+
+</android.support.constraint.ConstraintLayout>
